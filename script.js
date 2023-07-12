@@ -12,6 +12,7 @@ function isValidEmailFormat(emailAddress) {
       errorDisplay.classList.add("visible");
       errorDisplay.textContent = "Please provide a valid email";
       document.getElementById("email").style.border = "1px solid red";
+      document.getElementById("error-icon").style.visibility = "visible";
       return;
     }
   
@@ -33,7 +34,9 @@ function isValidEmailFormat(emailAddress) {
     const successDisplay = document.getElementById("success-display");
   
     errorDisplay.textContent = "";
+
     successDisplay.textContent = "";
     document.getElementById("email").style = "";
+    document.getElementById("error-icon").style.visibility = "hidden";
   }
   

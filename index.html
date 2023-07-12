@@ -5,31 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
       <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script  src="script.js"></script>
   </head>
   <body>
-
     <main>
       <div class="container is-fluid pr-0 pl-0">
       <div class="columns is-gapless">
         <div class="column is-three-fifths ">
-          <div class="left-side">
-          <div class="info">
-            <img src="./images/logo.svg" alt="logo" class="logo"/>
+          <div class="left-side is-flex is-align-content-center is-align-items-center">
+          <div class="info mx-auto">
+            <img src="./images/logo.svg" alt="logo" class="logo is-absolute"/>
             <img src="./images/hero-mobile.jpg" class="mobile-image" alt="mobile image"/>
-          <h1 class="header-text"><span class="header-span"> We're </span> Coming soon</h1>
-          <p class="text-body">Hello fellow shoppers! We're currently building our new fashion store. 
+          <h1 class="header-text is-uppercase"><span class="header-span"> We're </span> Coming soon</h1>
+          <p class="text-body p-5">Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-          <div class="input-container">
+          <div class="is-flex">
           <input class="input is-rounded is-medium"  required oninput="clearError()" type="email" id="email" placeholder="Email Address">
-         <button class="button is-rounded is-medium  btn" onclick="signUp()"  type="submit">
+         <button class="button is-rounded is-medium is-relative  btn" onclick="signUp()"  type="submit">
             <img src="./images/icon-arrow.svg" alt="arrow-icon"  />
           </button>
-
           </div>
+          <img src="./images/icon-error.svg" alt="error-icon" id="error-icon"/>
           <div  id="error-display"></div>
           <div  id="success-display"></div>
         </div>
