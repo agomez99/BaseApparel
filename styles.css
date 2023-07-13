@@ -10,7 +10,7 @@ main {
 
 .logo {
   position: absolute;
-  top: 50px;
+  top: 70px;
 }
 
 .left-side {
@@ -19,6 +19,7 @@ main {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+
 }
 
 .info {
@@ -30,11 +31,16 @@ main {
   width: 100%;
 }
 
+.input-container {
+  width: 600px;
+}
+
 .header-text {
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1rem;
-  line-height: 1;
+  line-height: 1.2;
+  width: 70%
 }
 
 .header-span {
@@ -46,17 +52,17 @@ main {
 .text-body {
   color: hsl(0, 36%, 70%);
   font-size: 16px;
+  width: 80%
 }
 
 .btn {
+
   width: 100px;
   border: none;
-  background: linear-gradient(
-    135deg,
-    hsl(0, 80%, 86%) 0%,
-    hsl(0, 74%, 74%) 100%
-  );
-  left: -50px;
+  background: linear-gradient(135deg,
+      hsl(0, 80%, 86%) 0%,
+      hsl(0, 74%, 74%) 100%);
+  left: -100px;
 }
 
 .hero-image {
@@ -69,22 +75,30 @@ main {
 }
 
 #error-display {
-  color: red;
+  color: hsl(0, 93%, 68%);
   font-size: 0.8rem;
   margin-left: 15%;
 }
+
 #error-icon {
-  position: relative;
-  top: -39px;
-  left: 200px;
+  height: 25px;
+  z-index: 1;
+  margin-right: 200px;
   visibility: hidden;
 }
+
 #success-display {
   color: rgb(60, 226, 60);
   font-size: 1rem;
 }
 
 @media (max-width: 600px) {
+  .logo {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+
   .hero-image {
     display: none;
   }
@@ -98,23 +112,34 @@ main {
   .info {
     width: 100%;
     margin-top: 30%;
+  }
+
+  .text-body {
     text-align: center;
+    width: 90%;
   }
 
   .header-text {
     font-size: 2.5rem;
-    padding: 5%;
+    padding: 0%;
+    text-align: center;
+    width: 100%
   }
 
   .header-span {
     font-size: 3rem;
   }
 
+  .input-container {
+    width: 420px;
+  }
+
   .input {
     margin-left: 10%;
+    font-size: 0.8rem;
   }
+
   #error-icon {
-    position: relative;
     top: -40px;
     left: 30px;
     visibility: hidden;
