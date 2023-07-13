@@ -8,7 +8,6 @@ function signUp() {
   const emailInput = document.getElementById("email");
   const errorDisplay = document.getElementById("error-display");
   const successDisplay = document.getElementById("success-display");
-
   const email = emailInput.value;
 
   if (!isValidEmailFormat(email)) {
@@ -21,11 +20,7 @@ function signUp() {
 
   errorDisplay.classList.remove("visible");
   errorDisplay.textContent = "";
-
-  console.log("Signed up with email:", email);
-
   emailInput.value = "";
-
   const message = "Successfully signed up newsletter for ";
   successDisplay.style.fontWeight = "bold";
   successDisplay.textContent = message + email;
